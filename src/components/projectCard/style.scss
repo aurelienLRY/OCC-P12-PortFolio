@@ -1,0 +1,144 @@
+@use "../../assets/sass/abstracts/variables" as v;
+@use "../../assets/sass/abstracts/mixins" as m;
+
+.project-card {
+  position: relative;
+  box-sizing: border-box;
+  background-color: v.$background-light-alpha;
+  border-radius: 5px;
+  padding: 0.5em 0.7em 1em 0.7em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5em;
+  min-height: 300px;
+  height: 100%;
+  max-width: 800px;
+
+  &_type {
+    position: absolute;
+    transform: rotate(25deg);
+    top: 25px;
+    right: 0px;
+    background-color: v.$secondary-color;
+    color: v.$text-color;
+    padding: 0.1em 0.3em;
+    border-radius: 5px;
+    font-size: 0.6em;
+  }
+
+  &_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &_title {
+    font-size: 1.6em;
+    color: v.$secondary-color;
+    text-align: center;
+    span {
+      color: v.$secondary-color-dark;
+      font-size: 0.5em;
+      opacity: 0.8;
+    }
+  }
+
+  &_body {
+    display: flex;
+    flex-direction: wrap;
+  }
+
+  &_content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    flex: 2;
+    font-size: 0.8em;
+  }
+
+  &_techno {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+
+    svg {
+      width: 2em;
+      height: 2em;
+      fill: v.$text-color;
+    }
+  }
+
+  &_aside {
+    box-sizing: border-box;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5em;
+    flex: 1;
+  }
+
+  &_statut {
+    background-color: v.$background-dark-alpha;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+
+    &.deployed {
+      background-color: v.$secondary-color;
+      box-shadow: 0px 0px 2px 2px v.$secondary-color-shadow;
+      transition: all 0.3s ease-in-out;
+      a {
+        font-size: 0.8rem;
+        color: v.$text-color;
+        text-decoration: none;
+      }
+      &:hover {
+        background-color: v.$secondary-color-dark;
+        transform: scale(1.05);
+      }
+    }
+
+    &.done {
+      background-color: v.$success-color;
+      box-shadow: 0px 0px 2px 2px v.$success-color-shadow;
+      font-size: 0.8rem;
+    }
+
+    &.progress {
+      background-color: v.$warning-color;
+      box-shadow: 0px 0px 2px 2px v.$warning-color-dark;
+      font-size: 0.8rem;
+    }
+  }
+
+  &_footer {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+  
+
+    a {
+      padding: 0.1rem 0.4rem;
+      border-radius: 5px;
+      width: min-content;
+      background-color: v.$background-dark;
+      box-shadow: 0px 0px 2px 2px v.$background-light;
+
+      font-size: 0.8rem;
+      color: v.$text-color;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: v.$background-light;
+      }
+    }
+  
+  
+  }
+
+}

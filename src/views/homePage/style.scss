@@ -1,0 +1,114 @@
+@use "../../assets/sass/abstracts/variables" as v;
+@use "../../assets/sass/abstracts/mixins" as m;
+
+$background-image: url("./img/bg-explosion/bg-explosion.webp");
+$background-image-avatar: url("./img/avart.png");
+.homepage {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+
+  @include m.media(tablet) {
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  &::before {
+    content: "";
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: $background-image no-repeat, v.$background-dark;
+    background-size: cover; //
+    background-position: right 30% bottom;
+    //background-blend-mode: lighten,color-dodge;
+    background-blend-mode: color-dodge;
+  }
+  &::after {
+    content: "";
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: $background-image-avatar;
+    opacity: 0.9;
+    background-size: cover; //
+    background-position: right 30% bottom;
+    //background-blend-mode: lighten,color-dodge;
+    background-blend-mode: color-dodge;
+  }
+
+  &-content {
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6em;
+    min-width: 320px;
+    width: 60%;
+    max-width: 750px;
+    animation: insert 1s forwards;
+    padding: 1em;
+    border-radius: 10px;
+
+    
+  }
+  @include m.media(tablet) {
+    &-content {
+      width: 100%;
+      padding: 1em 0.8em;
+    }
+  }
+
+  @include m.media(md-mobile) {
+    &-content {
+      background-color: v.$background-dark-alpha;
+      border-radius: 1em;
+    }
+  }
+
+  &-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .particules-conteneur {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    z-index: -1;
+
+    @include m.media(tablet) {
+      top: unset;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 60%;
+    }
+  }
+}
+
+
+@keyframes insert {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+}

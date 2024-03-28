@@ -1,0 +1,21 @@
+@use "../../assets/sass/abstracts/variables" as v;
+@use "../../assets/sass/abstracts/mixins" as m;
+
+.footer {
+  position: absolute;
+  bottom: 0.2em;
+  left: 1.5em;
+
+  @include m.media(md-mobile) {
+    display: none;
+  }
+
+  svg {
+    font-size: 1.2em;
+    color: v.$text-color;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+}

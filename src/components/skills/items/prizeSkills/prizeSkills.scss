@@ -1,0 +1,30 @@
+@use "../../../../assets/sass/abstracts/variables" as v;
+@use "../../../../assets/sass/abstracts/mixins" as m;
+
+
+.bg-gradient {
+  $list : v.$background-dark-alpha 33%, #ffffff00 40% ; 
+  @include m.gradient(bottom, $list);
+   border-radius: 7px; 
+}
+
+
+.prizeSkills {
+    display: flex;
+    align-items: center;
+    gap:1em; 
+
+
+
+  &_title {
+  }
+
+  &_content {
+    font-size: 0.8em;
+  }
+
+  &_date {
+    min-width: 48px ;
+    color: v.$secondary-color;
+  }
+}

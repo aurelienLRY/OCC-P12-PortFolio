@@ -1,0 +1,245 @@
+[
+  {
+    "name": "Riding Cities",
+    "description": "Premier Projet réalisé dans le cadre de la formation OpenClassrooms",
+    "date": "2023",
+    "images": {
+      "desktop": "./img/project/ridingCities/ridingCities-Dekstop.jpeg",
+      "tablet": null,
+      "mobile": null
+    },
+    "typeProject": "Projet de Formation",
+    "objectif": "Intégrer des éléments sur une page web en utilisant les fondamentaux du HTML",
+    "frontend": {
+      "Html": "Html",
+      "Css": "Css",
+      "Photoshop": "photoshop"
+    },
+    "backend": null,
+    "statut": "deployed",
+    "UrlDeployed": "https://aurelienlry.github.io/OCC-P2-Riding-Cities/",
+    "UrlGithub": "https://github.com/aurelienLRY/OCC-P2-Riding-Cities.git"
+  },
+  {
+    "name": "Booki",
+    "description": "Un projet scénarisé dans le but de travailler sur l'intégration d'une interface utilisateur en utilisant HTML et CSS.",
+    "date": "2023",
+    "images": {
+      "desktop": "./img/project/Booki/Booki-Dekstop.jpeg",
+      "tablet": "./img/project/Booki/Booki-tablet.jpeg",
+      "mobile": "./img/project/Booki/Booki-mobile.jpeg"
+    },
+    "typeProject": "Projet de formation",
+    "objectif": "Intégrer l'interface utilisateur du site Booki en utilisant HTML et CSS Respecter les standards de développement web pour garantir la qualité du code.",
+    "frontend": {
+      "Html": "Html",
+      "Css": "Css"
+    },
+    "backend": null,
+    "statut": "deployed",
+    "UrlDeployed": "https://aurelienlry.github.io/OCC-P3-Booki/",
+    "UrlGithub": "https://github.com/aurelienLRY/OCC-P3-Booki.git"
+  }, 
+  {
+    "name": "ohmyfood",
+    "description": "Développer un site « mobile first » qui répertorie les menus de restaurants gastronomiques.",
+    "date": "2023",
+    "images": {
+      "desktop": "./img/project/ohmyfood/ohmyfood-Dekstop.jpeg",
+      "tablet": "./img/project/ohmyfood/ohmyfood-tablet.jpeg",
+      "mobile": "./img/project/ohmyfood/ohmyfood-mobile.jpeg"
+    },
+    "typeProject": "Projet de formation",
+    "objectif": " Intégrer la page d'accueil du site Ohmyfood en utilisant HTML et Sass, mettre en place des animations CSS et assurer le versionnage du code avec Git",
+    "frontend": {
+      "Html": "Html",
+      "Sass": "Sass",
+      "Github":"Github"
+    },
+    "backend": null,
+    "statut": "deployed",
+    "UrlDeployed": "https://aurelienlry.github.io/OCC-P4-Ohmyfood/",
+    "UrlGithub": "https://github.com/aurelienLRY/OCC-P4-Ohmyfood.git"
+  },
+  {
+    "name": "Print it!",
+    "description": "Dynamiser le site Internet statique d'une petite imprimerie familiale nommée Print it",
+    "date": "2023",
+    "images": {
+      "desktop": "./img/project/print-it/print-it-Dekstop.jpeg",
+      "tablet": null,
+      "mobile": null
+    },
+    "typeProject": "Projet de formation",
+    "objectif": "Création d'un carrousel dynamique en utilisant les fondamentaux de JavaScript.",
+    "frontend": {
+      "Html": "Html",
+      "Css": "Css",
+      "Javascript":"Javascript",
+      "Github":"Github"
+    },
+    "backend": null,
+    "statut": "deployed",
+    "UrlDeployed": "https://aurelienlry.github.io/OCC-P5-Print_it/",
+    "UrlGithub": "https://github.com/aurelienLRY/OCC-P5-Print_it.git"
+  },
+  {
+    "name": "Sophie Bluel",
+    "description": "Création d'un Portfolio pour une architecte à partir d'une maquette Figma.",
+    "date": "2023",
+    "images": {
+      "desktop": "./img/project/print-it/print-it-Dekstop.jpeg",
+      "tablet": null,
+      "mobile": null
+    },
+    "typeProject": "Projet de formation",
+    "objectif": "Création d'un site from scratch en utilisant HTML, SASS ainsi que JavaScript pour gérer les événements utilisateurs et la manipulation des éléments du DOM.",
+    "frontend": {
+      "Html": "Html",
+      "Sass": "Sass",
+      "Javascript":"Javascript",
+      "Github":"Github"
+    },
+    "backend": null,
+    "statut": "done",
+    "UrlDeployed": "https://aurelienlry.github.io/OCC-P5-Print_it/",
+    "UrlGithub": "https://github.com/aurelienLRY/OCC-P6-Shopie-bluel.git"
+  }, 
+  {
+    "name": "Kaza",
+    "description": "Kasa a été codé il ya maintenant plus de 10 ans en ASP.NET , il est temps une refonte totale.",
+    "date": "2023",
+    "images": {
+      "desktop": "./img/project/print-it/print-it-Dekstop.jpeg",
+      "tablet": null,
+      "mobile": null
+    },
+    "typeProject": "Projet de formation",
+    "objectif": "À partir d'une maquette, initier un projet avec React, React Router DOM et Sass.",
+    "frontend": {
+      "Html": "Html",
+      "Sass": "Sass",
+      "React":"React",
+      "Github":"Github"
+    },
+    "backend": null,
+    "statut": "done",
+    "UrlDeployed": "https://aurelienlry.github.io/OCC-P5-Print_it/",
+    "UrlGithub": "https://github.com/aurelienLRY/OCC-P8-KASA.git"
+  },
+  {
+    "name": "Nina carducci",
+    "description": "Optimisation globale du site tant sur les performances que sur le SEO. Mise en place du référencement local, ajout des métas pour les réseaux sociaux. Modification liées à l’accessibilité du site.",
+    "date": "2023",
+    "images": {
+      "desktop": "./img/project/nina-carducci/nina-Dekstop.jpeg",
+      "tablet": "./img/project/nina-carducci/nina-tablet.jpeg",
+      "mobile": "./img/project/nina-carducci/nina-mobile.jpeg"
+    },
+    "typeProject": "Projet de formation",
+    "objectif": "Optimiser la performance d'un site web et son accessibilité",
+    "frontend": {
+      "Html": "Html",
+      "Sass": "Sass",
+      "Github":"Github"
+    },
+    "backend": null,
+    "statut": "deployed",
+    "UrlDeployed": "https://aurelienlry.github.io/OCC-P9-NINA-CARDUCCI/",
+    "UrlGithub": "https://github.com/aurelienLRY/OCC-P9-NINA-CARDUCCI.git"
+  } , 
+  {
+    "name": "724Events",
+    "description": "Le site de cette agence événementiel est en cours de développement. Présentant différent bugs entravent le bon usage par les visiteurs, il faut rapidement agir pour les corriger.",
+    "date": "2024",
+    "images": {
+      "desktop": "./img/project/724Events/724-Dekstop.jpeg",
+      "tablet": null,
+      "mobile": null
+    },
+    "typeProject": "Projet de formation",
+    "objectif": "Déboguer un site web grâce aux Chrome DevTools, réaliser et corriger des tests unitaires et d'intégration",
+    "frontend": {
+      "Html": "Html",
+      "Sass": "Sass",
+      "React":"React",
+      "Github":"Github"
+    },
+    "backend": null,
+    "statut": "deployed",
+    "UrlDeployed": "https://occ-p10.leroyaurelien.com/",
+    "UrlGithub": "https://github.com/aurelienLRY/OCC-P10-724Events.git"
+  } , 
+  {
+    "name": "Image Processor",
+    "description": " App web conçue pour simplifier le processus d'intégration d'images dans les projets web responsive. Elle permet aux développeurs de redimensionner et compresser des images selon les préférences de l'utilisateur.",
+    "date": "2024",
+    "images": {
+      "desktop": "./img/project/image-processor/processor-Dekstop.jpeg",
+      "tablet": null,
+      "mobile": null
+    },
+    "typeProject": "Projet personnel",
+    "objectif": "Mettre en pratique les connaissances fraîchement acquises et d'approfondir mes compétences dans le développement backend, en utilisant une pile Javascript.",
+    "frontend": {
+      "Client-React":"React", 
+      "Sass": "Sass",
+      "Github":"Github"
+    },
+    "backend": {
+      "Node Server": "Node"   
+    },
+    "statut": "deployed",
+    "UrlDeployed": "https://image-processor.leroyaurelien.com/",
+    "UrlGithub": "https://github.com/aurelienLRY/ImageProcessor-Pro.git"
+  },
+  {
+    "name": "ERP - Ecole associative",
+    "description": " À partir d'un constat personnel au sein de l'école de mon enfant, j'ai décidé de développer une application web cherchant à améliorer la gestion de l'école et faciliter la communication interne.",
+    "date": "2021",
+    "images": {
+      "desktop": "./img/project/erp/erp-Dekstop.jpeg",
+      "tablet": "./img/project/erp/erp-tablet.jpeg",
+      "mobile": "./img/project/erp/erp-mobile.jpeg"
+    },
+    "typeProject": "Projet personnel",
+    "objectif": "Proposer un espace membre avec différents groupes et privilèges, proposer un système de communication ciblé , dématérialiser les inscriptions , proposer un espace de stockage de documents et de ressources pédagogiques...etc",
+    "frontend": {
+      "Html":"Html", 
+      "Css": "Css",
+      "Github":"Github"
+    },
+    "backend": {
+      "php": "Php", 
+      "Mysql": "Database"
+    },
+    "statut": "in-progress",
+    "UrlDeployed": "https://beta.portail-famille.loscascamels.fr/",
+    "UrlGithub": "https://github.com/aurelienLRY/ERP_Ecole-associative.git"
+  },
+  {
+    "name": "ArgentBank",
+    "description": " ",
+    "date": "2024",
+    "images": {
+      "desktop": "./img/project/image-processor/processor-Dekstop.jpeg",
+      "tablet": null,
+      "mobile": null
+    },
+    "typeProject": "Projet personnel",
+    "objectif": "Développer le frontend d’une application bancaire en utilisant React et Redux pour créer une expérience utilisateur dynamique et réactive.  Définir les points d'accès de l'API en utilisant Swagger.",
+    "frontend": {
+      "Html":"Html",
+      "React":"React", 
+      "Sass": "Sass",
+      "Github":"Github"
+    },
+    "backend": {
+      "Node Server": "Node"   
+    
+    },
+    "statut": "done",
+    "UrlDeployed": "https://image-processor.leroyaurelien.com/",
+    "UrlGithub": "https://github.com/aurelienLRY/ImageProcessor-Pro.git"
+  }
+]

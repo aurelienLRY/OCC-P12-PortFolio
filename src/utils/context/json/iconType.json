@@ -1,0 +1,70 @@
+[
+    {
+        "id": "Html",
+        "type": "fontawesome",
+        "value" : "faHtml5"
+    },
+    {
+        "id": "Css",
+        "type": "fontawesome",
+        "value" : "faCss3Alt"
+    },
+    {
+        "id": "Sass",
+        "type": "fontawesome",
+        "value" : "faSass"
+    },
+    {
+        "id": "Javascript",
+        "type": "fontawesome",
+        "value" : "faSquareJs"
+    },
+    {
+        "id": "React",
+        "type": "fontawesome",
+        "value" : "faReact"
+    },
+    {
+        "id": "Node",
+        "type": "fontawesome",
+        "value" : "faNodeJs"
+    },
+    {
+        "id": "Php",
+        "type": "fontawesome",
+        "value" : "faPhp"
+    },
+    {
+        "id": "Database",
+        "type": "fontawesome",
+        "value" : "faDatabase"
+    },
+    {
+        "id": "Figma",
+        "type": "fontawesome",
+        "value" : "faFigma"
+    },
+    {
+        "id": "Github",
+        "type": "fontawesome",
+        "value" : "faGithub"
+    }, 
+    {
+        "id": "photoshop",
+        "type": "Custom",
+        "value" : "photoshop"
+    },
+    {
+        "id": "Jest",
+        "type": "Custom",
+        "value" : "Jest"
+    },
+    {
+        "id": "Vscode",
+        "type": "Custom",
+        "value" : "Vscode"
+    }
+
+   
+
+]

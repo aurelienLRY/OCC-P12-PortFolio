@@ -1,0 +1,43 @@
+
+@use'../assets/sass/abstracts/variables' as v;  
+.fade-enter::before {
+    content: "";
+
+    position: fixed;
+    top: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: v.$background-light;
+    transform: translateX(-100%);
+    animation: 1.5s cubic-bezier(.56,.23,.24,1)  both loader ;
+  }
+  
+
+  
+  .fade-exit::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: v.$background-light;
+    transform: translateX(-100%);
+    animation: 1.5s cubic-bezier(.56,.23,.24,1)  both loader ;
+  }
+  
+ 
+
+
+  @keyframes loader {
+    0% {
+        transform: translateX(-100%);
+    }
+    40%, 60%{
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+    
+    
+}

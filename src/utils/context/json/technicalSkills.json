@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Frontend",
+    "descriptif": [
+      { "name": "HTML","date": "2021-10" , "icon": "Html" },
+      { "name": "CSS3", "date": "2021-10" , "icon": "Css" },
+      { "name": "Sass", "date": "2023-10" , "icon": "Sass" },
+      { "name": "Javascript","date": "2023-05" , "icon": "Javascript" },
+      { "name": "React", "date": "2023-11" , "icon": "React" }
+    ]
+  },
+  {
+    "name": "Backend",
+    "descriptif": [
+      { "name": "Node", "date": "2024-02" , "icon": "Node" },
+      { "name": "Mysql", "date": "2022-06" , "icon": "Database" },
+      { "name": "PHP", "date": "2021-10" , "icon": "Php" }
+    ]
+  },
+  {
+    "name": "Tools",
+    "descriptif": [
+      { "name": "Git", "date": "2021-11" , "icon": "Github" },
+      { "name": "Jest", "date": "2023-11" , "icon": "Jest" },
+      { "name": "Vscode", "date": "2021-10" , "icon": "Vscode" }
+    ]
+  },
+  {
+    "name": "Design",
+    "descriptif": [
+      { "name": "Photoshop", "date": "2015-01" , "icon": "photoshop"},
+      { "name": "Figma", "date": "2023-09" , "icon": "Figma" }
+    ]
+  }
+]

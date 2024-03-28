@@ -1,0 +1,54 @@
+@use "../../assets/sass/abstracts/mixins" as m;
+@use "../../assets/sass/abstracts/variables" as v;
+.projectPage {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+
+  $background-url: url("./img/bulb/bulb.webp");
+
+  &_header {
+    position: relative;
+    width: 70%;
+    display: flex;
+    gap: 1.5em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    .header_img {
+      width: 100%;
+      flex: 1;
+      min-height: 150px;
+      min-width: 190px;
+      width: 100%;
+      max-width: 350px;
+      height: 100%;
+      background: $background-url no-repeat, v.$background-dark;
+      background-size: contain; //
+      background-position: center;
+      //background-blend-mode: lighten,color-dodge;
+      background-blend-mode: color-dodge;
+
+    
+    }
+
+    .header_text {
+      max-width: 750px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5em;
+      flex: 2;
+      text-align: center;
+    }
+  }
+  .panel{
+    width: 100vw;
+    height: 90vh;
+    color: white;
+  }
+}

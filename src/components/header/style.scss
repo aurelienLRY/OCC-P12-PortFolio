@@ -1,0 +1,180 @@
+@use "../../assets/sass/abstracts/variables" as v;
+@use "../../assets/sass/abstracts/mixins" as m;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1em;
+  width: 100%;
+
+  h2 {
+    a {
+      text-decoration: none;
+      padding-top: 0.5em;
+      padding-left: 2em;
+      font-size: v.$fontSize * 2;
+      font-weight: 600;
+      color: v.$text-color;
+      span {
+        font-weight: 200;
+        font-size: v.$fontSize * 1.5;
+        &::after {
+          content: " .";
+          color: v.$primary-color;
+        }
+      }
+    }
+    @include m.media(tablet) {
+      padding-left: 0.6em;
+    }
+  }
+
+  .navbar {
+    a {
+      text-decoration: none;
+      color: v.$text-color;
+      font-weight: 300;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: v.$primary-color;
+      }
+      &.active {
+        color: v.$primary-color;
+      }
+    }
+  }
+}
+
+.nav_links {
+  position: fixed;
+  top: 50%;
+  right: 0.5em;
+  transform: translateX(0px);
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+
+  height: auto;
+  border-radius: 2em;
+  padding: 1.2em 0.5em;
+
+  background-color: v.$background-medium-alpha;
+
+  & a {
+    font-size: 1em;
+  }
+
+  & a svg {
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  @include m.media(tablet) {
+    //comportement
+    z-index: 900;
+    position: fixed;
+    right: 0em;
+    top: 0em;
+    transform: translateX(300px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+    //style
+    background-color: v.$background-dark;
+    padding: 0.8em;
+    border-radius: 1em 0em 0em 1em;
+    height: 100vh;
+
+    a {
+      color: v.$text-color;
+      text-decoration: none;
+      transition: all 250ms ease-in-out;
+      &:hover,
+      &:active,
+      &.active-link {
+        color: v.$primary-color;
+      }
+    }
+
+    svg {
+      display: none;
+    }
+
+    &.opened {
+      transform: translateX(0px);
+    }
+    transition: transform 350ms;
+  }
+}
+
+//btn trigger
+#nav_trigger button {
+  display: none;
+
+  @include m.media(tablet) {
+    z-index: 910;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    background-color: v.$background-medium-alpha;
+    border: none;
+    border-radius: 2em;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+    width: 3em;
+    height: 3em;
+  }
+}
+
+.line {
+  fill: none;
+  stroke: v.$text-color;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+@keyframes test {
+  from {
+    transform: translateX(500px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}

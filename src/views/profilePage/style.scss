@@ -1,0 +1,90 @@
+@use '../../assets/sass/abstracts/variables' as v;
+@use '../../assets/sass/abstracts/mixins' as m;
+
+.profilePage {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4em;
+
+@include m.media(desktop){
+    flex-direction: column;
+    align-items: center;
+}
+
+  &-context {
+    box-sizing: border-box;
+    min-width: 350px;
+    width: 70%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    margin-top: 1.8em;
+
+   @include m.media(desktop){
+      align-items: center;
+      max-width: 90%;
+    }
+
+    article{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5em;
+    }
+
+
+
+
+
+  }
+  &-skills {
+    overflow: hidden;
+    box-sizing: border-box;
+    min-width: 350px;
+    width: 70%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+  }
+  
+  $background-image: url("./img/circles/circles-dekstop.webp");
+  $background-image-top: url("./img/top-left-img/top-left-img-tablet-xl.webp");
+  &::before {
+    content: "";
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 50%;
+    min-width: 400px ;
+    max-width: 550px;
+    height: 50%;
+    background: $background-image no-repeat, v.$background-dark;
+    background-size: contain; //
+    background-position: right 0% bottom;
+    //background-blend-mode: lighten,color-dodge;
+    background-blend-mode: color-dodge;
+  }
+  &::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    min-width: 190px;
+    width: 30%;
+    max-width: 450px;
+    height: 30%;
+    background: $background-image-top no-repeat, v.$background-dark;
+    background-size: contain; //
+    background-position: left 0% top;
+    //background-blend-mode: lighten,color-dodge;
+    background-blend-mode: color-dodge;
+  }
+}

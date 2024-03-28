@@ -1,0 +1,13 @@
+@use "../../assets/sass/abstracts/variables" as v;
+.nofoundpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        font-size: 4em;
+        font-weight: 700;
+        color: v.$primary-color;
+    }
+}
