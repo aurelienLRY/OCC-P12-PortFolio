@@ -1,5 +1,6 @@
 import "./style.scss";
 import Particules from "../../components/particules";
+import PageTransition from "../../utils/framerPageTransitions";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -24,4 +25,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default PageTransition(Home);
