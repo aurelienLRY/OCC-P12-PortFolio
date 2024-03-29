@@ -1,5 +1,6 @@
 import './style.scss'
 
+
 function NoFoundPage() {
   return (
 <main className="nofoundpage " data-testid="noFoundPage">
@@ -9,4 +10,4 @@ function NoFoundPage() {
   )
 }
 
-export default NoFoundPage
+export default NoFoundPage;

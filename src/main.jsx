@@ -1,22 +1,22 @@
-import React from 'react'
-import { DataProvider } from './utils/context/dataContext';
-import ReactDOM from 'react-dom/client'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { DataProvider } from "./utils/context/dataContext";
 import { BrowserRouter as Router } from "react-router-dom";
+import Routeur from "./utils/Routes";
 
-import Header from './components/header';
-import Routeur from './utils/Routes'; 
-import './assets/sass/main.scss';
-import Footer from './components/footer';
+/* components*/
+import Header from "./components/header";
+import Footer from "./components/footer";
+import "./assets/sass/main.scss";
 
-
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <DataProvider>
     <Router>
-      <Header/>
-      <Routeur />
-      <Footer/>
+      <DataProvider>
+        <Header />
+        <Routeur />
+        <Footer />
+      </DataProvider>
     </Router>
-    </DataProvider>
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);

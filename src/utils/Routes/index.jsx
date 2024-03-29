@@ -1,21 +1,33 @@
-import { Route, Routes} from 'react-router-dom';
-
+import { Route, Routes, useLocation } from "react-router-dom";
+import { CSSTransition, SwitchTransition } from "react-transition-group";
 /* Pages */
-import Home from '../../views/homePage';
-import ProfilePage from '../../views/profilePage';
-import ProjectPage from '../../views/projectPage';
-import NotFoundPage from '../../views/noFound';
-
+import Home from "../../views/homePage";
+import ProfilePage from "../../views/profilePage";
+import ProjectPage from "../../views/projectPage";
+import NotFoundPage from "../../views/noFound";
 
 function Routeur() {
+  const location = useLocation();
+
   return (
-    <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/profile" element={<ProfilePage />} />
-        <Route path="/projet" element={<ProjectPage />} />
-        <Route path="/*" element={<NotFoundPage />} />
-    </Routes>
-  )
+ 
+      <SwitchTransition>
+        <CSSTransition
+          key={location.pathname}
+          timeout={300}
+          classNames="loader"
+          unmountOnExit
+        >   
+         <Routes location={location}>
+          <Route index path="/" element={<Home />} />
+          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/projet" element={<ProjectPage />} />
+          <Route path="/*" element={<NotFoundPage />} />
+            </Routes>
+        </CSSTransition>
+      </SwitchTransition>
+  
+  );
 }
 
-export default Routeur
+export default Routeur;
