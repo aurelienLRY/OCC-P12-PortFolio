@@ -1,5 +1,5 @@
 import './style.scss'
-import PageTransition from "../../utils/framerPageTransitions";
+
 
 function NoFoundPage() {
   return (
@@ -10,4 +10,4 @@ function NoFoundPage() {
   )
 }
 
-export default  PageTransition(NoFoundPage);
+export default NoFoundPage;

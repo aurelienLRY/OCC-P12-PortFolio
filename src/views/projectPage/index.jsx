@@ -1,6 +1,5 @@
 import React from "react";
 import ProjectList from "../../container/projectList";
-import PageTransition from "../../utils/framerPageTransitions";
 import "./style.scss";
 function ProjectPage() {
   return (
@@ -19,4 +18,4 @@ function ProjectPage() {
   );
 }
 
-export default PageTransition(ProjectPage);
+export default ProjectPage;

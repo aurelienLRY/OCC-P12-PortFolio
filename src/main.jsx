@@ -1,21 +1,22 @@
-import React from 'react'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { DataProvider } from "./utils/context/dataContext";
+import { BrowserRouter as Router } from "react-router-dom";
+import Routeur from "./utils/Routes";
 
-import ReactDOM from 'react-dom/client'
-import { BrowserRouter as Router , Routes, Route} from "react-router-dom";
-import App from './app';
+/* components*/
+import Header from "./components/header";
+import Footer from "./components/footer";
+import "./assets/sass/main.scss";
 
-
-
-import './assets/sass/main.scss';
-
-
-
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Router>
-      <Routes>
-        <Route index path="/*" element={<App/>} />
-      </Routes>
+      <DataProvider>
+        <Header />
+        <Routeur />
+        <Footer />
+      </DataProvider>
     </Router>
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);

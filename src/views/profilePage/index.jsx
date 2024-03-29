@@ -1,5 +1,5 @@
 import Skills from "../../components/skills";
-import PageTransition from "../../utils/framerPageTransitions";
+
 import "./style.scss";
 
 function ProfilePage() {
@@ -36,4 +36,4 @@ function ProfilePage() {
   );
 }
 
-export default PageTransition(ProfilePage);
+export default ProfilePage;

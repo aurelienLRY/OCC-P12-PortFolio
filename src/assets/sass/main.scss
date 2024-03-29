@@ -7,6 +7,7 @@
 
 
 
+
 html {
   font-family: v.$fontFamily;
   font-size: v.$fontSize;
@@ -35,6 +36,7 @@ main {
   box-sizing: border-box;
   min-height: 85vh ;
   padding: 0.5em 2.7em;
+
 
  @include m.media(tablet){
   box-sizing: border-box;
@@ -69,3 +71,6 @@ h3 {
   font-weight: 300;
   font-size: v.$fontSize * 1.2;
 }
+
+
+
