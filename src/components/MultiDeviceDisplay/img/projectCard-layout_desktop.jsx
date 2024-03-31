@@ -9,6 +9,7 @@ function Desktop({className}) {
 
       viewBox="0 0 260.89 213.11"
       className={className}
+      data-testid="desktopSvg"
     >
       <g id="ProjectCard_x5F_layout-desktop">
         <g id="Desktop">

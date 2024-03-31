@@ -1,7 +1,8 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { DataContext } from "../../utils/context/dataContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Tooltip } from "antd";
+import PropTypes from "prop-types"; 
 import moduleStyle from "../../assets/sass/main.module.scss";
 import {
   faHtml5,
@@ -19,6 +20,16 @@ import PhotoshopSvg from "./svg/photoshop";
 import JestSvg from "./svg/jest";
 import VscodeSvg from "./svg/vscode";
 
+/**
+ * Renders an icon based on the provided iconId.
+ *
+ * @param {Object} props - The component props.
+ * @param {string} props.className - The class name for the icon.
+ * @param {string} props.tooltip - The tooltip text for the icon.
+ * @param {string} props.position - The position of the tooltip.
+ * @param {string} props.iconId - The ID of the icon to be rendered.
+ * @returns {JSX.Element} The rendered icon component.
+ */
 function IconDispatch({ className, tooltip, position, iconId }) {
   const [icon, setIcon] = useState({});
   const mapperIcon = useContext(DataContext).iconType;
@@ -35,33 +46,37 @@ function IconDispatch({ className, tooltip, position, iconId }) {
     });
   }, []);
 
-
-
   return (
     <Tooltip
       title={tooltip}
       placement={position}
       color={moduleStyle.toolTipBackground}
+      data-testid="iconDispatch"
     >
       {icon.type === "fontawesome" && (
-        <FontAwesomeIcon icon={iconMap[icon.value]} className={className} />
+        <FontAwesomeIcon icon={iconMap[icon.value]} className={className} data-testid="awesomeSvg"/>
       )}
 
       {icon.type === "Custom" && icon.value === "photoshop" && (
-        <PhotoshopSvg className={className} />
+        <PhotoshopSvg className={className}  />
       )}
       
       {icon.type === "Custom" && icon.value === "Jest" && (
-        <JestSvg className={className} />
+        <JestSvg className={className}  />
       )}
       {icon.type === "Custom" && icon.value === "Vscode" && (
-        <VscodeSvg className={className} />
+        <VscodeSvg className={className}  />
       )}
-      
-    
     </Tooltip>
   );
 }
+
+IconDispatch.prototype = {
+  className: PropTypes.string,
+  tooltip: PropTypes.string,
+  position: PropTypes.string,
+  iconId: PropTypes.string,
+};
 
 export default IconDispatch;
 
@@ -76,7 +91,6 @@ const iconMap = {
   faDatabase: faDatabase,
   faFigma: faFigma,
   faGithub: faGithub,
-  // ajoutez d'autres icônes ici si nécessaire
 };
 
 

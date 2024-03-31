@@ -1,5 +1,8 @@
-import { useState , useContext } from "react";
-import { DataContext } from "../../utils/context/dataContext";
+/**
+ * Header component.
+ * Renders the header section of the website.
+ */
+import { useState  } from "react";
 import { NavLink } from "react-router-dom";
 import { Tooltip } from "antd";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,11 +13,13 @@ import moduleStyle from "../../assets/sass/main.module.scss";
 
 import "./style.scss";
 
+/**
+ * Header component.
+ * Renders the header section of the website.
+ * @returns {JSX.Element} The rendered header component.
+ */
 function Header() {
   const [opened, setOpened] = useState(false);
-
-  const context = useContext(DataContext);
-  console.log("COntext header >>>>",context);
 
   return (
     <header data-testid="header" className="header">
@@ -23,7 +28,7 @@ function Header() {
           Leroy <span>Aurélien</span>
         </NavLink>
       </h2>
-      <nav className="navbar">
+      <nav className="navbar" data-testid="navbar">
         <div id="nav_trigger">
           <button
             aria-label="Main Menu"
@@ -53,7 +58,7 @@ function Header() {
                 placement="left"
                 color={moduleStyle.toolTipBackground}
               >
-                <FontAwesomeIcon icon={faHouse} />
+                <FontAwesomeIcon icon={faHouse}  data-testid="Accueil"/>
               </Tooltip>
             )}
           </NavLink>
@@ -67,7 +72,7 @@ function Header() {
                 placement="left"
                 color={moduleStyle.toolTipBackground}
               >
-                <FontAwesomeIcon icon={faUser} />
+                <FontAwesomeIcon icon={faUser} data-testid="MonProfil" />
               </Tooltip>
             )}
           </NavLink>
@@ -81,7 +86,7 @@ function Header() {
                 placement="left"
                 color={moduleStyle.toolTipBackground}
               >
-                <FontAwesomeIcon icon={faGithub} />
+                <FontAwesomeIcon icon={faGithub} data-testid="MesProjets"/>
               </Tooltip>
             )}
           </NavLink>

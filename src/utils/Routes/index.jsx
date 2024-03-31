@@ -1,3 +1,4 @@
+
 import { Route, Routes, useLocation } from "react-router-dom";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 /* Pages */
@@ -6,6 +7,10 @@ import ProfilePage from "../../views/profilePage";
 import ProjectPage from "../../views/projectPage";
 import NotFoundPage from "../../views/noFound";
 
+/**
+ * Renders the router component that handles the routing of different pages.
+ * @returns {JSX.Element} The router component.
+ */
 function Routeur() {
   const location = useLocation();
 
