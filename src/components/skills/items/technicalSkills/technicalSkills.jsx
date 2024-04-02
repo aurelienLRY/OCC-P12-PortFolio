@@ -11,7 +11,7 @@ import "./technicalSkills.scss";
 function TechnicalSkills() {
   const { technical } = useContext(DataContext).skills;
   return (
-    <div className="item">
+    <div className="item" data-testid="technicalSkills">
       {technical.map((comp, index) => (
         <div key={`comp${index}`} className={`${comp.name} item_row`}>
           {comp.name} :

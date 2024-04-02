@@ -6,6 +6,7 @@ function JestSvg({ className }) {
       viewBox="0 0 800 800"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
+	  data-testid="custom_svg_Jest"
     >
       <path
         d="M741.7,394c0-47.1-31.9-88.4-77.6-100.4L763.7,0H270.2l99.9,294.7c-44.3,12.9-74.8,53.4-74.9,99.5

@@ -10,6 +10,7 @@ function PhotoshopSvg({ className }) {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 13.974 13.974"
 	  className={className}
+	  data-testid="customSvgPhotoshop"
     >
       <path
         d="M13.974,0.732c0,4.178,0,8.356,0,12.534c-0.029,0.075-0.054,0.152-0.089,0.224c-0.13,0.274-0.365,0.412-0.647,0.484

@@ -6,6 +6,7 @@ function Mobile({ className }) {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 76.62 158.33"
       className={className}
+      data-testid="mobileSvg"
     >
       <g id="ProjectCard_x5F_layout-mobile">
         <g id="mobil">

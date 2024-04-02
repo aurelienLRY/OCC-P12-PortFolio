@@ -2,20 +2,26 @@
 @use "../../assets/sass/abstracts/mixins" as m;
 
 .footer {
-  position: absolute;
-  bottom: 0.2em;
-  left: 1.5em;
+width: 100%;
+min-height: 27px;
 
-  @include m.media(md-mobile) {
-    display: none;
-  }
 
-  svg {
-    font-size: 1.2em;
-    color: v.$text-color;
-    transition: all 0.3s ease-in-out;
-    &:hover {
-      transform: scale(1.3);
+  &_icon {
+    position: absolute;
+    bottom: 0.2em;
+    left: 1.5em;
+
+    @include m.media(md-mobile) {
+      display: none;
+    }
+
+    svg {
+      font-size: 1.2em;
+      color: v.$text-color;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.3);
+      }
     }
   }
 }

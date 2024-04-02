@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 function VscodeVsg({ className }){
  
 return (
-<svg version="1.1" id="VisuelStudioCode" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 446.1"  className={className}>
+<svg version="1.1" id="VisuelStudioCode" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 446.1"  className={className} data-testid="Custom_svg_VScode">
 <g>
 	<path className="st0" d="M312.9,4.9c8.9-6.3,18.3-6.2,27.8-1.6c25.8,12.4,51.6,24.8,77.4,37.2c4.8,2.3,9.7,4.4,14.4,7
 		c10.1,5.4,15.5,13.8,15.5,25.4c0,99.9,0,199.8,0,299.7c0,11.6-4.8,20.6-15.1,25.6c-31.4,15.4-62.9,30.5-94.5,45.4

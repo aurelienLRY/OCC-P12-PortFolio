@@ -1,5 +1,4 @@
 import Skills from "../../components/skills";
-
 import "./style.scss";
 
 function ProfilePage() {

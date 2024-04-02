@@ -8,6 +8,7 @@ function Tablet({ className }) {
   xmlns="http://www.w3.org/2000/svg"
   viewBox="0 0 118.67 184.56"
   className={className}
+  data-testid="tabletSvg"
 >
   <g id="ProjectCard_x5F_layout-tablet">
     <g id="Tablet">
