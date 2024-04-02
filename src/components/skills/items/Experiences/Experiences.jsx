@@ -1,11 +1,14 @@
 import { Timeline, ConfigProvider } from "antd";
-import {  UserOutlined } from '@ant-design/icons';
-
 import { Dem, DroneLent, ExploitantDrone, Gerant } from "./Experience-item";
 import "./experiences.scss"; 
 
 
-
+/**
+ * Renders the Experiences component.
+ * This component displays a timeline of experiences.
+ *
+ * @returns {JSX.Element} The Experiences component.
+ */
 function Experiences() {
   return (
     <div className="item-experience item">

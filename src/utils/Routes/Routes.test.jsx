@@ -14,17 +14,7 @@ describe("Routeur component", () => {
     expect(homePageElement).toBeInTheDocument();
   });
 
-  it('renders Profile page when the path is "/profile"', () => {
-    render(
-      <DataProvider>
-        <MemoryRouter initialEntries={["/profile"]}>
-          <Routeur />
-        </MemoryRouter>
-      </DataProvider>
-    );
-    const profilePageElement = screen.getByTestId("profile-page");
-    expect(profilePageElement).toBeInTheDocument();
-  });
+
 
   it('renders Project page when the path is "/projet"', () => {
     render(

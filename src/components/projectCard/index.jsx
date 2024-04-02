@@ -1,10 +1,28 @@
+
 import PropTypes from "prop-types";
 import MultiDeviceDisplay from "../MultiDeviceDisplay";
 import IconDispatch from "../IconDispatch";
 import { Tooltip } from "antd";
 import moduleStyle from "../../assets/sass/main.module.scss";
 import "./style.scss";
-
+/**
+ * Renders a project card component.
+ *
+ * @component
+ * @param {Object} repo - The project repository object.
+ * @param {string} repo.name - The name of the project.
+ * @param {string} repo.date - The date of the project.
+ * @param {string} repo.description - The description of the project.
+ * @param {Array} repo.images - The images of the project.
+ * @param {string} repo.UrlDeployed - The URL of the deployed project.
+ * @param {string} repo.UrlGithub - The URL of the project's GitHub repository.
+ * @param {string} repo.objectif - The objective of the project.
+ * @param {string} repo.statut - The status of the project.
+ * @param {Object} repo.frontend - The frontend technologies used in the project.
+ * @param {Object} repo.backend - The backend technologies used in the project.
+ * @param {string} repo.typeProject - The type of the project.
+ * @returns {JSX.Element} The project card component.
+ */
 function ProjectCard(repo) {
   const {
     name,

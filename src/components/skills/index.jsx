@@ -1,3 +1,4 @@
+
 import { useState, useContext } from "react";
 import { DataContext } from "../../utils/context/dataContext";
 
@@ -7,7 +8,11 @@ import Experiences from "./items/Experiences/Experiences";
 import PrizeSkills from "./items/prizeSkills/prizeSkills";
 
 import "./skills.scss";
-
+/**
+ * Renders the Skills component.
+ * 
+ * @returns {JSX.Element} The Skills component.
+ */
 function Skills() {
   const [skillsOpened, setSkillsOpened] = useState(0);
   const { header } = useContext(DataContext).skills;
