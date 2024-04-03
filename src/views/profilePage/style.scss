@@ -52,9 +52,9 @@
     align-items: center;
     gap: 1.5em;
   }
-  
-  $background-image: url("./img/circles/circles-dekstop.webp");
-  $background-image-top: url("./img/top-left-img/top-left-img-tablet-xl.webp");
+
+  $background-image: url("/img/circles/circles-tablet.webp");
+  $background-image-top: url("/img/top-left-img/top-left-img-mobil.webp");
   &::before {
     content: "";
     position: fixed;
