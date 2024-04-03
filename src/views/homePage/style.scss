@@ -1,8 +1,8 @@
 @use "../../assets/sass/abstracts/variables" as v;
 @use "../../assets/sass/abstracts/mixins" as m;
 
-$background-image: url("./img/bg-explosion/bg-explosion.webp");
-$background-image-avatar: url("./img/avart.png");
+$background-image: url("/img/bg-explosion/bg-explosion.webp");
+$background-image-avatar: url("/img/avatar-homepage.png");
 .homepage {
   box-sizing: border-box;
   width: 100%;
