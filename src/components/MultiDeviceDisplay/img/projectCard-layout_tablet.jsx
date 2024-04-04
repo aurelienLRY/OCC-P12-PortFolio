@@ -9,6 +9,9 @@ function Tablet({ className }) {
   viewBox="0 0 118.67 184.56"
   className={className}
   data-testid="tabletSvg"
+  focusable="false"
+  role="img"
+  aria-label="écran de tablette"
 >
   <g id="ProjectCard_x5F_layout-tablet">
     <g id="Tablet">
