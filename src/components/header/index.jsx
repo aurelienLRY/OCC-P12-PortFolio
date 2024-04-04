@@ -49,7 +49,7 @@ function Header() {
           </button>
         </div>
         <div className={opened ? "opened nav_links" : "nav_links"}>
-          <NavLink to="/">
+          <NavLink to="/" onClick={()=> setOpened(false)}>
             {opened ? (
               "Accueil"
             ) : (
@@ -63,7 +63,7 @@ function Header() {
             )}
           </NavLink>
 
-          <NavLink to="/profile">
+          <NavLink to="/profile" onClick={()=> setOpened(false)}>
             {opened ? (
               "Mon profil"
             ) : (
@@ -77,7 +77,7 @@ function Header() {
             )}
           </NavLink>
 
-          <NavLink to="/projet">
+          <NavLink to="/projet" onClick={()=> setOpened(false)}>
             {opened ? (
               "Mes projets"
             ) : (
