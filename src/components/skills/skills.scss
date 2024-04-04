@@ -14,11 +14,24 @@
 
   &_header {
     overflow: hidden;
-
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     gap: 1.2em;
+
+    &_divider {
+      width: 100%;
+      display: flex;
+      gap: 1.2em;
+      align-items: center;
+      justify-content: space-around;
+      flex: 1;
+    }
+
+    @include m.media(tablet) {
+      flex-direction: column; 
+      gap: 1.5em;
+    }
 
     button {
       all: unset;

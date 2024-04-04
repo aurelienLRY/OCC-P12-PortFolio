@@ -7,7 +7,7 @@ export const Gerant = () => (
       compétences en gestion de projet et en développement d'applications
       innovantes.
     </p>
-    <p className="experience-item_hashtag"> #R&D #InnovationTechnologique #GestionDeProjet #RéalitéVirtuelle</p>
+    <p className="experience-item_hashtag"> #R&D #InnovationTechnique #GestionDeProjet #RéalitéVirtuelle</p>
   </div>
 );
 export const ExploitantDrone = () => (
@@ -18,11 +18,10 @@ export const ExploitantDrone = () => (
     </h4>
     <p className="experience-item_content">
       Gestionnaire de flotte de drones, assurant la conformité du matériel et la
-      sécurité des missions, renforçant ainsi mes compétences pour garantir la
-      qualité du code en tant qu'intégrateur web.
+      sécurité des missions. Prototypage de drone, mise en conformité.
     </p>
     <p className="experience-item_hashtag">
-      #Captation #Montage #GestionDeProjet
+      #Captation #GestionDeProjet #InnovationTechnique
     </p>
   </div>
 );
@@ -31,9 +30,7 @@ export const DroneLent = () => (
     <h3 className="experience-item_title">Chef d’équipe drone lent</h3>
     <h4 className="experience-item_subTitle">Renseignement militaire</h4>
     <p>
-      Responsable dans des environnements hostiles, développant des compétences
-      en résolution de problèmes et en prise de décisions rapides, des qualités
-      cruciales dans le développement web.
+      Responsable d’une équipe dans le renseignement d’origine image. Exerçant des posts tels que pilote drone, analyste image et chef de groupe.  
     </p>
     <p className="experience-item_hashtag">
     #AnalyseDeDonnées #GestionOpérationnelle #Leadership
@@ -45,8 +42,8 @@ export const Dem = () => (
     <h3 className="experience-item_title">Technicien DEM</h3>
     <h4 className="experience-item_subTitle">Militaire</h4>
     <p>
-      Maintenance des équipements, développant une rigueur technique et une
-      attention aux détails essentielles dans le développement web.
+      Maintenance des équipements électromagnétique, développant une rigueur technique et une
+      attention aux détails.
     </p>
     <p className="experience-item_hashtag">
     #Rigueur #Fiabilité #Détermination

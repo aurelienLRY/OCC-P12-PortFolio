@@ -23,11 +23,11 @@ function Header() {
 
   return (
     <header data-testid="header" className="header">
-      <h2>
+      <h1>
         <NavLink to="/">
           Leroy <span>Aurélien</span>
         </NavLink>
-      </h2>
+      </h1>
       <nav className="navbar" data-testid="navbar">
         <div id="nav_trigger">
           <button

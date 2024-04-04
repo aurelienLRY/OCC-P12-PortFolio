@@ -26,6 +26,10 @@
     padding: 0.1em 0.3em;
     border-radius: 5px;
     font-size: 0.6em;
+
+    @include m.media("md-mobile") {
+      display: none;
+    }
   }
 
   &_header {
@@ -48,8 +52,12 @@
   &_body {
     display: flex;
     flex-direction: wrap;
-  }
 
+    @include m.media("md-mobile") {
+      flex-direction: column-reverse;
+      gap: 0.8em;
+    }
+  }
   &_content {
     display: flex;
     flex-direction: column;
@@ -80,6 +88,10 @@
     align-items: center;
     gap: 0.5em;
     flex: 1;
+
+    @include m.media("tablet") {
+      width: 100%;
+    }
   }
 
   &_statut {
@@ -119,7 +131,6 @@
     display: flex;
     align-items: center;
     gap: 0.8em;
-  
 
     a {
       padding: 0.1rem 0.4rem;
@@ -137,8 +148,5 @@
         background-color: v.$background-light;
       }
     }
-  
-  
   }
-
 }

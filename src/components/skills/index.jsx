@@ -19,17 +19,30 @@ function Skills() {
 
   return (
     <div className="skills" data-testid="skills">
-      <div className="skills_header">
-        {header.map((skill, index) => (
+<div className="skills_header">
+  {header.map((skill, index) => (
+    index % 2 === 0 ? (
+      <div className="skills_header_divider" key={`divider${index}`}>
+        <button
+          key={`skills-header${index}`}
+          onClick={() => setSkillsOpened(index)}
+          className={skillsOpened === index ? "active" : ""}
+        >
+          {skill.name}
+        </button>
+        {header[index + 1] && (
           <button
-            key={`skills-header${index}`}
-            onClick={() => setSkillsOpened(index)}
-            className={skillsOpened === index ? "active" : ""}
+            key={`skills-header${index + 1}`}
+            onClick={() => setSkillsOpened(index + 1)}
+            className={skillsOpened === index + 1 ? "active" : ""}
           >
-            {skill.name}
+            {header[index + 1].name}
           </button>
-        ))}
+        )}
       </div>
+    ) : null
+  ))}
+</div>
 
       <div
         className={

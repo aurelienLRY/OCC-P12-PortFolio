@@ -7,8 +7,13 @@
   justify-content: start;
   gap: 1em;
   width: 100%;
+  margin-top: 0.8em;
 
-  h2 {
+  @include m.media(tablet) {
+    justify-content: center;
+  }
+
+  h1 {
     a {
       text-decoration: none;
       padding-top: 0.5em;
