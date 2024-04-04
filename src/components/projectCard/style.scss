@@ -21,7 +21,7 @@
     transform: rotate(25deg);
     top: 25px;
     right: 0px;
-    background-color: v.$secondary-color;
+    background-color: v.$secondary-color-dark;
     color: v.$text-color;
     padding: 0.1em 0.3em;
     border-radius: 5px;
@@ -45,7 +45,7 @@
     span {
       color: v.$secondary-color-dark;
       font-size: 0.5em;
-      opacity: 0.8;
+
     }
   }
 
@@ -95,17 +95,19 @@
   }
 
   &_statut {
-    background-color: v.$background-dark-alpha;
+    background-color: v.$background-dark;
     padding: 0.2rem 0.5rem;
     border-radius: 5px;
+    color: black;
+    font-weight: 400;
 
     &.deployed {
       background-color: v.$secondary-color;
       box-shadow: 0px 0px 2px 2px v.$secondary-color-shadow;
       transition: all 0.3s ease-in-out;
       a {
+        color: black;
         font-size: 0.8rem;
-        color: v.$text-color;
         text-decoration: none;
       }
       &:hover {
@@ -118,6 +120,7 @@
       background-color: v.$success-color;
       box-shadow: 0px 0px 2px 2px v.$success-color-shadow;
       font-size: 0.8rem;
+      color: v.$text-color;
     }
 
     &.progress {

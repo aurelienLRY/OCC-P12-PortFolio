@@ -7,6 +7,9 @@ function Mobile({ className }) {
       viewBox="0 0 76.62 158.33"
       className={className}
       data-testid="mobileSvg"
+      focusable="false"
+      role="img"
+      aria-label="écran mobile"
     >
       <g id="ProjectCard_x5F_layout-mobile">
         <g id="mobil">

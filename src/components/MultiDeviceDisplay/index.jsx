@@ -22,7 +22,7 @@ function MultiDeviceDisplay({ images }) {
           <div className="desktopDevice" data-testid="multiDevice-desktop">
             <div className="desktopDevice relative">
               <Desktop className="desktopDevice-layout" />
-              <img src={images.desktop} alt="" className="desktopDevice-img" />
+              <img src={images.desktop} alt="illustration de l'application sur un écran d'ordinateur" className="desktopDevice-img" />
             </div>
           </div>
         )}
@@ -31,7 +31,7 @@ function MultiDeviceDisplay({ images }) {
           <div className="tabletDevice" data-testid="multiDevice-tablet">
             <div className="tabletDevice relative">
               <Tablet className="tabletDevice-layout" />
-              <img src={images.tablet} alt="" className="tabletDevice-img" />
+              <img src={images.tablet} alt="illustration de l'application sur une tablette" className="tabletDevice-img" />
             </div>
           </div>
         )}
@@ -40,7 +40,7 @@ function MultiDeviceDisplay({ images }) {
           <div className="mobileDevice" data-testid="multiDevice-mobile">
             <div className="mobileDevice relative">
               <Mobile className="mobileDevice-layout" />
-              <img src={images.mobile} alt="" className="mobileDevice-img" />
+              <img src={images.mobile} alt="illustration de l'application sur un mobile" className="mobileDevice-img" />
             </div>
           </div>
         )}

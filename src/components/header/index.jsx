@@ -24,7 +24,7 @@ function Header() {
   return (
     <header data-testid="header" className="header">
       <h1>
-        <NavLink to="/">
+        <NavLink to="/" aria-label="liens vers la page d’accueil">
           Leroy <span>Aurélien</span>
         </NavLink>
       </h1>
@@ -49,7 +49,7 @@ function Header() {
           </button>
         </div>
         <div className={opened ? "opened nav_links" : "nav_links"}>
-          <NavLink to="/" onClick={()=> setOpened(false)}>
+          <NavLink to="/" onClick={()=> setOpened(false)} aria-label="liens vers la page d'accueil">
             {opened ? (
               "Accueil"
             ) : (
@@ -63,7 +63,7 @@ function Header() {
             )}
           </NavLink>
 
-          <NavLink to="/profile" onClick={()=> setOpened(false)}>
+          <NavLink to="/profile" onClick={()=> setOpened(false)} aria-label="liens vers la page de profil">
             {opened ? (
               "Mon profil"
             ) : (
@@ -77,7 +77,7 @@ function Header() {
             )}
           </NavLink>
 
-          <NavLink to="/projet" onClick={()=> setOpened(false)}>
+          <NavLink to="/projet" onClick={()=> setOpened(false)} aria-label="liens vers la page des projects">
             {opened ? (
               "Mes projets"
             ) : (
